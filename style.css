@@ -5,7 +5,7 @@
 
 /* Using font-size: larger to make things pop. Feel free to change. */
 body {
-    background-color:#36013F;
+    background-color:#000000;
     color: white;
     margin: 30px;
     font-size: x-large;
@@ -24,4 +24,9 @@ h6 {
 h3 {
     text-decoration: underline;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+    text-align: center;
+    font-size: 2em;
 }
