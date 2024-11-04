@@ -14,6 +14,8 @@
 /*** Event Listeners ***/
 document.getElementById("gamestart").addEventListener("click", game_start)
 
+
+
 document.getElementById("menustart").addEventListener("click", menu)
 /*** Functions ***/
 
