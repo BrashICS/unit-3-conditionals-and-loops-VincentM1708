@@ -14,6 +14,7 @@
 /*** Event Listeners ***/
 document.getElementById("gamestart").addEventListener("click", game_start)
 
+document.getElementById("menustart").addEventListener("click", menu)
 /*** Functions ***/
 
 // A very accurate rounding function
@@ -98,6 +99,43 @@ function upstairs() {
 
 function first_room() {
 
+}
+
+function menu() {
+// Setup the menu
+let message = `Hi! Please make a selection:
+1 - Play
+2 - Options
+3 - DLC
+4 - Check for Updates
+5 - Exit
+`
+
+let difficulty = `What difficulty would you like to try?
+Easy(1)
+Medium(2)
+Hard(3)
+`
+// Prompt with the menu
+let selection = Number(prompt(message));
+
+
+if (selection == 1) {
+    alert ("Alright let's play!")
+    let difficulty_options = prompt (difficulty)
+
+    if (difficulty_options == 1){
+        alert ("You selected the easy route, your kind of boring")
+    } 
+
+    else if (difficulty_options == 2) {
+        alert ("Most people choose medium.")
+    }
+    
+    else if (difficulty_options == 3) {
+        alert ("I like that you chose the challenging option!")
+    }
+}
 }
 
 
