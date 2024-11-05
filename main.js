@@ -143,4 +143,24 @@ if (selection == 1) {
 if (selection == 2) {}
 }
 
+//Part 1 is_number else practise
+function is_number(num) {
+    if (typeof num == "number") {
+        return true 
+    }
+    else {
+        return false
+    }
+        
+}
+
+
+//Part 2 Validate
+function which_day(n) {
+    if (which_day == 1)
+        prompt ("Then the day of the week is monday!")
+
+    else if (which_day == 2)
+        prompt ("Then the day of the week...")
+}
 
