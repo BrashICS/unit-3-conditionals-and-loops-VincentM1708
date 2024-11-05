@@ -124,7 +124,8 @@ let selection = Number(prompt(message));
 
 if (selection == 1) {
     alert ("Alright let's play!")
-    let difficulty_options = prompt (difficulty)
+    //+ in front of prompt tells code answer is supposed to be a number
+    let difficulty_options = +prompt (difficulty)
 
     if (difficulty_options == 1){
         alert ("You selected the easy route, your kind of boring")
@@ -138,6 +139,8 @@ if (selection == 1) {
         alert ("I like that you chose the challenging option!")
     }
 }
+
+if (selection == 2) {}
 }
 
 
