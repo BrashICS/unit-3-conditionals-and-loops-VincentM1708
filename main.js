@@ -14,8 +14,6 @@
 /*** Event Listeners ***/
 document.getElementById("gamestart").addEventListener("click", game_start)
 
-
-
 document.getElementById("menustart").addEventListener("click", menu)
 /*** Functions ***/
 
@@ -46,14 +44,7 @@ function game_start() {
         room_choice()
     }
 }
-
-function enchant_goblet() {
-    alert ("You drank the goblet and for a short moment you were the most powerful person in the universe...... Unfortunately you couldn't withstand it and died instantly... Maybe try again.")
-}
-
-
-function room_choice() {
-    alert("You politely decline the tarvern keep and make your way into another room.")
+i
     let room_option = prompt("Which room do you go into (1)bathroom (2)upstairs back (3)outside")
 
     if (room_option == 1) {
@@ -156,11 +147,15 @@ function is_number(num) {
 
 
 //Part 2 Validate
-function which_day(n) {
+function which_day(day) {
+    
+
     if (which_day == 1)
-        prompt ("Then the day of the week is monday!")
+        
+        prompt ("Yes its sunday!")
+        
 
     else if (which_day == 2)
-        prompt ("Then the day of the week...")
+        prompt ("Then the day of the week is monday!")
 }
 
