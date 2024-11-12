@@ -41,25 +41,26 @@ function game_start() {
     }
 
     else if (conversation == 2) {
-        room_choice()
+        room_option()
     }
-}
-i
-    let room_option = prompt("Which room do you go into (1)bathroom (2)upstairs back (3)outside")
 
-    if (room_option == 1) {
+
+    function room_option(){
+    let room_choice = prompt("Which room do you go into (1)bathroom (2)upstairs back (3)outside")
+
+    if (room_choice == 1) {
         bathroom()
     }
 
-    else if (room_option == 2) {
+    else if (room_choice == 2) {
         upstairs()
     }
 
-    else if (room_option == 3) {
+    else if (room_choice == 3) {
         back_outside()
     }
+    }
 }
-
 function bathroom() {
     alert ("You walked into a stall and sat on the toilet to handle your business but realized a zombie head was sitting in the toilet bowl and it scared you to death...🧟‍♂️ Maybe try again.")
 }
@@ -68,6 +69,9 @@ function back_outside() {
     alert ("You leave the tavern but the guests yank you back inside and curse you into a halloween spirit to forever sit in the tarvern and drink Enchanted Goblets... Maybe try again.")
 }
 
+function enchant_goblet(){
+    alert ("You stink and drank the goblet and died instantly")
+}
 
 function upstairs() {
     alert ("You walk upstairs to see you could enter 2 unkown rooms or go into the attic or you could ignore all of that and leave.")
@@ -159,3 +163,28 @@ function which_day(day) {
         prompt ("Then the day of the week is monday!")
 }
 
+
+
+function countdown(start, stop) {
+    if (stop > start) {
+        return -1
+    }
+
+    else {
+        let count = true;
+        let amount = 0
+
+            while (count){
+                console.log(start)
+                start --
+                amount ++
+
+                if (start == stop) {
+                    return amount;
+        
+                }
+
+            }
+        
+    }
+}
