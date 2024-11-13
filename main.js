@@ -166,9 +166,9 @@ function which_day(day) {
 
 
 function countdown(start, stop) {
-    if (stop > start) {
+if (stop > start) {
         return -1
-    }
+}
 
     else {
         let count = true;
@@ -182,9 +182,50 @@ function countdown(start, stop) {
                 if (start == stop) {
                     return amount;
         
-                }
-
             }
+
+        }
         
     }
+}
+
+function average(n) {
+    let avg = 0;
+    let count = 1;
+    avg = +prompt(`Please enter a value ${count}/${n}`)
+
+    while (count <= n) {
+        avg += +prompt(`Please enter a value ${count}/${n}`)
+        count++;
+    }
+
+    avg = round(avg / n, 1);
+    console.log(`The average is ${avg}`)
+}
+
+//!= ! is equal to "not"
+function random_until(min, max, stop){
+
+    //ERROR CHECKING
+
+    //check that max is greater than min if not return -1
+    if (max <= min) {
+    return -1;
+    }
+    //check that stop is between or equal to min and max. if not return -1
+    if (stop > max || stop < min) {
+        return -1;
+    }
+    //You could also put (max <= min) inside ^ this if statement with another || (max <= min)
+
+    //GENERATE RANDOM NUMBER
+    let rnd = randInt(min, max);
+
+    //Check to see if its the stop value
+    while (rnd != stop){
+        console.log(rnd);
+        rnd = randInt(min, max)
+    }
+    //return
+    return stop;
 }
