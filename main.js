@@ -203,6 +203,7 @@ function average(n) {
     console.log(`The average is ${avg}`)
 }
 
+
 //!= ! is equal to "not"
 function random_until(min, max, stop){
 
@@ -229,3 +230,37 @@ function random_until(min, max, stop){
     //return
     return stop;
 }
+
+function print_reverse(str){
+    let current_letter = str.length -1
+    let reverse_output = ""
+
+    while (current_letter >= 0) {
+        reverse_output += (str[current_letter])
+        current_letter--
+    }
+    console.log(reverse_output)
+}
+
+function dragons_and_goblins(str) {
+    let dragons = 0
+    let goblins = 0
+    let current_letter = 0
+
+    while (current_letter < str.length) {
+        let letter_now = (str[current_letter])
+    
+
+    if (letter_now == "d"){
+        dragons++
+    }
+
+    if (letter_now == "g"){
+        goblins++
+    }
+
+    current_letter++
+    }
+    console.log(`Dragons: ${dragons} Goblins: ${goblins}`)
+}
+    
