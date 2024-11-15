@@ -264,3 +264,27 @@ function dragons_and_goblins(str) {
     console.log(`Dragons: ${dragons} Goblins: ${goblins}`)
 }
     
+
+function parrot() {
+    let input;
+    do {
+        input = prompt(`Please enter some text or the word "quit" to exit: `)
+        let output = (input.toUpperCase())
+
+        if (input.toLowerCase() != "quit") {
+            console.log (output) 
+        }
+            
+    } while (input.toLowerCase() != "quit")
+
+    console.log("GOODBYE! 🦜")
+}
+
+function negative_only() {
+    let input;
+    do {
+        input = +prompt(`Please enter ONLY a negative number and absolutely nothing else`)
+
+    }while (input >= -1)
+        return input
+}
