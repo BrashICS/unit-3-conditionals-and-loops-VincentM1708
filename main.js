@@ -288,3 +288,22 @@ function negative_only() {
     }while (input >= -1)
         return input
 }
+
+
+function count_up(start, stop) {
+    for (let min = start; min <= stop; min++) {
+        console.log(min)
+    }
+}
+
+function count_down(start, stop) {
+    for (let max = start; max >= stop; max--) {
+        console.log(max)
+    }
+}
+
+function print_chars(str, step) {
+    for (let start = 0; start < str.length -1; start += step) {
+    console.log(str[start])
+    }
+}
