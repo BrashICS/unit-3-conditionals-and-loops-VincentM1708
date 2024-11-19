@@ -307,3 +307,11 @@ function print_chars(str, step) {
     console.log(str[start])
     }
 }
+
+function sum(n) {
+    let adding = 0
+    for (let start = 1; start <= n; start++) {
+        adding += start
+    }
+    return adding
+}
