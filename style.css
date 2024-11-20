@@ -1,11 +1,11 @@
 /*
-  style.css
+  style.css 
   Feel free to change this CSS for your own purposes
 */
 
 /* Using font-size: larger to make things pop. Feel free to change. */
 body {
-    background-color:#36013F;
+    background-color:#000000;
     color: white;
     margin: 30px;
     font-size: x-large;
@@ -24,4 +24,17 @@ h6 {
 h3 {
     text-decoration: underline;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+    color:dimgray
+    text-align center;
+    font-size: 2em;
+}
+
+button:hover {
+    color:aqua
+    font-size 200%;
+    transition-duration: 0.5s;
+    transition-property: font-size, color;
 }
