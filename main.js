@@ -289,7 +289,7 @@ function negative_only() {
         return input
 }
 
-
+//PART 1  Functions loops practice
 function count_up(start, stop) {
     for (let min = start; min <= stop; min++) {
         console.log(min)
@@ -308,10 +308,36 @@ function print_chars(str, step) {
     }
 }
 
+
+// PART 2 Functions
 function sum(n) {
     let adding = 0
     for (let start = 1; start <= n; start++) {
         adding += start
     }
     return adding
+}
+
+function count4(begin, end) {
+
+    //establishing a divisible variable to be able to divide end count
+    let divisible = 0
+
+    //loop saying Start = begin input in function; then if the start(being) is greater or equal to the end input from function; then add 1 to start
+    for (let start = begin; start <= end; start++) {
+
+        //If the start variable is divisible by 4 and its true
+        if (start % 4 == 0)
+
+            //add 1 to divisible variable
+            {divisible ++ 
+        }
+    }
+
+    //if all of that happens return the divisible variable to console
+    return divisible
+}
+
+function sum_divisible(n, x) {
+    
 }
